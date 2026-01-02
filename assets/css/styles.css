@@ -75,7 +75,7 @@ input[type="submit"] {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -84,7 +84,7 @@ input[type="submit"] {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #7e22ce;
+    background: #a855f7;
 }
 
 /* Loading State for Form */
@@ -184,13 +184,13 @@ a,
 
 /* Custom Selection Color */
 ::selection {
-    background-color: #e9d5ff;
-    color: #581c87;
+    background-color: #9333ea;
+    color: #ffffff;
 }
 
 ::-moz-selection {
-    background-color: #e9d5ff;
-    color: #581c87;
+    background-color: #9333ea;
+    color: #ffffff;
 }
 
 /* Gradient Backgrounds */
