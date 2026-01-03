@@ -253,65 +253,7 @@ img[loading="lazy"] {
     }
 }
 
-/* Gradient Glow Effects */
-@keyframes gradientGlow {
-    0%, 100% {
-        opacity: 0.3;
-        transform: scale(1);
-    }
-    50% {
-        opacity: 0.5;
-        transform: scale(1.1);
-    }
-}
-
-.gradient-glow {
-    animation: gradientGlow 8s ease-in-out infinite;
-}
-
-/* Floating Particles */
-.particle {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
-    pointer-events: none;
-    animation: float-particle linear infinite;
-}
-
-@keyframes float-particle {
-    0% {
-        transform: translateY(100vh) translateX(0);
-        opacity: 0;
-    }
-    10% {
-        opacity: 0.3;
-    }
-    90% {
-        opacity: 0.3;
-    }
-    100% {
-        transform: translateY(-100px) translateX(var(--drift));
-        opacity: 0;
-    }
-}
-
-/* Scroll Blur Effect */
-.scroll-blur {
-    transition: filter 0.3s ease;
-}
-
-.scroll-blur.blurred {
-    filter: blur(8px);
-}
-
-/* Enhanced Blur for Modern Browsers */
-@supports (backdrop-filter: blur(100px)) {
-    .gradient-blur {
-        backdrop-filter: blur(100px);
-    }
-}
+/* Minimal Design - Clean Apple-style aesthetics */
 
 /* Dark Mode Preparation (for future) */
 @media (prefers-color-scheme: dark) {

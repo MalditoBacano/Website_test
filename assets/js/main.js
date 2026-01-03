@@ -20,12 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Intersection Observer for Animations
     initScrollAnimations();
-
-    // Initialize Floating Particles
-    initFloatingParticles();
-
-    // Initialize Scroll Blur Effect
-    initScrollBlur();
 });
 
 /**
@@ -328,98 +322,5 @@ window.addEventListener('scroll', throttle(function() {
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 }, 100));
 
-/**
- * Initialize Floating Particles
- */
-function initFloatingParticles() {
-    const particlesContainer = document.getElementById('particles-container');
-
-    if (!particlesContainer) return;
-
-    // Create 50 particles
-    const particleCount = 50;
-
-    for (let i = 0; i < particleCount; i++) {
-        createParticle(particlesContainer);
-    }
-
-    // Continuously create new particles
-    setInterval(() => {
-        if (document.querySelectorAll('.particle').length < particleCount) {
-            createParticle(particlesContainer);
-        }
-    }, 2000);
-}
-
-function createParticle(container) {
-    const particle = document.createElement('div');
-    particle.className = 'particle';
-
-    // Random horizontal position
-    const startX = Math.random() * 100;
-    particle.style.left = startX + '%';
-
-    // Random size (1-3px)
-    const size = Math.random() * 2 + 1;
-    particle.style.width = size + 'px';
-    particle.style.height = size + 'px';
-
-    // Random opacity
-    const opacity = Math.random() * 0.3 + 0.1;
-    particle.style.background = `rgba(255, 255, 255, ${opacity})`;
-
-    // Random drift amount
-    const drift = (Math.random() - 0.5) * 200;
-    particle.style.setProperty('--drift', drift + 'px');
-
-    // Random animation duration
-    const duration = Math.random() * 15 + 10; // 10-25 seconds
-    particle.style.animationDuration = duration + 's';
-
-    // Random delay
-    const delay = Math.random() * 5;
-    particle.style.animationDelay = delay + 's';
-
-    container.appendChild(particle);
-
-    // Remove particle after animation
-    setTimeout(() => {
-        particle.remove();
-    }, (duration + delay) * 1000);
-}
-
-/**
- * Initialize Scroll Blur Effect
- */
-function initScrollBlur() {
-    const heroSection = document.querySelector('section');
-
-    if (!heroSection) return;
-
-    // Add scroll-blur class to hero section
-    heroSection.classList.add('scroll-blur');
-
-    let ticking = false;
-
-    window.addEventListener('scroll', function() {
-        if (!ticking) {
-            window.requestAnimationFrame(function() {
-                const scrollPosition = window.pageYOffset;
-                const blurThreshold = 200; // Start blurring after 200px scroll
-
-                if (scrollPosition > blurThreshold) {
-                    heroSection.classList.add('blurred');
-                } else {
-                    heroSection.classList.remove('blurred');
-                }
-
-                ticking = false;
-            });
-
-            ticking = true;
-        }
-    });
-}
-
 // Log initialization
-console.log('Integration Pathways - Website initialized successfully');
+console.log('Integration Pathways - Apple-style minimal design initialized');

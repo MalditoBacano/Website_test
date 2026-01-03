@@ -38,21 +38,21 @@
 <body class="font-sans antialiased bg-black text-white">
 
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-black/80 backdrop-blur-md z-50 border-b border-gray-800">
+    <nav class="fixed top-0 w-full bg-black/95 backdrop-blur-xl z-50 border-b border-zinc-800/50">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <a href="index.html" class="text-xl font-semibold text-white">
-                        Integration <span class="text-primary-600">Pathways</span>
+                    <a href="index.html" class="text-lg font-medium text-white">
+                        Integration Pathways
                     </a>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-300 hover:text-primary-600 transition-colors">Home</a>
-                    <a href="demo.html" class="text-gray-300 hover:text-primary-600 transition-colors">Demo</a>
-                    <a href="about.html" class="text-gray-300 hover:text-primary-600 transition-colors">About</a>
-                    <a href="contact.html" class="text-white hover:text-primary-600 transition-colors font-medium">Contact</a>
-                    <a href="contact.html" class="bg-primary-600 text-white px-6 py-2.5 rounded-lg hover:bg-primary-700 transition-all shadow-sm hover:shadow-md">
-                        Book Consultation
+                    <a href="index.html" class="text-gray-400 text-sm hover:text-white transition-colors">Home</a>
+                    <a href="demo.html" class="text-gray-400 text-sm hover:text-white transition-colors">Demo</a>
+                    <a href="about.html" class="text-gray-400 text-sm hover:text-white transition-colors">About</a>
+                    <a href="contact.html" class="text-white text-sm hover:text-gray-300 transition-colors">Contact</a>
+                    <a href="contact.html" class="">
+                        
                     </a>
                 </div>
                 <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white">
@@ -64,14 +64,14 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-800 bg-gray-900">
+        <div id="mobile-menu" class="hidden md:hidden border-t border-zinc-800 bg-black">
             <div class="px-6 py-4 space-y-3">
                 <a href="index.html" class="block text-gray-300 hover:text-primary-600">Home</a>
                 <a href="demo.html" class="block text-gray-300 hover:text-primary-600">Demo</a>
                 <a href="about.html" class="block text-gray-300 hover:text-primary-600">About</a>
                 <a href="contact.html" class="block text-white hover:text-primary-600 font-medium">Contact</a>
                 <a href="contact.html" class="block bg-primary-600 text-white px-6 py-2.5 rounded-lg hover:bg-primary-700 text-center">
-                    Book Consultation
+                    
                 </a>
             </div>
         </div>
@@ -79,283 +79,3 @@
 
     <!-- Header -->
     <section class="pt-32 pb-16 px-6 lg:px-8 bg-black relative overflow-hidden">
-        <!-- Gradient Overlay -->
-        <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-transparent to-blue-900/20 pointer-events-none"></div>
-        <div class="absolute bottom-0 left-0 w-96 h-96 bg-purple-600/30 rounded-full filter blur-3xl opacity-50 -translate-x-1/2 translate-y-1/2"></div>
-        <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-600/30 rounded-full filter blur-3xl opacity-50 translate-x-1/2 translate-y-1/2"></div>
-        <div class="max-w-7xl mx-auto text-center relative z-10">
-            <h1 class="text-5xl lg:text-6xl font-bold text-white mb-6">
-                Let's Talk <span class="text-primary-600">Automation</span>
-            </h1>
-            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                Ready to automate your workflows? Book a free consultation or send us a message. We typically respond within 24 hours.
-            </p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="py-20 px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid lg:grid-cols-2 gap-12">
-
-                <!-- Contact Form -->
-                <div>
-                    <div class="bg-gray-900 rounded-2xl shadow-lg border border-gray-700 p-8">
-                        <h2 class="text-3xl font-bold text-white mb-6">Send us a message</h2>
-                        <form id="contact-form" class="space-y-6" netlify>
-                            <div>
-                                <label for="name" class="block text-sm font-medium text-gray-200 mb-2">Full Name *</label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    required
-                                    class="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-all"
-                                    placeholder="John Smith"
-                                >
-                            </div>
-
-                            <div>
-                                <label for="email" class="block text-sm font-medium text-gray-200 mb-2">Email Address *</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    required
-                                    class="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-all"
-                                    placeholder="john@company.com"
-                                >
-                            </div>
-
-                            <div>
-                                <label for="business-type" class="block text-sm font-medium text-gray-200 mb-2">Business Type</label>
-                                <select
-                                    id="business-type"
-                                    name="business-type"
-                                    class="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-all"
-                                >
-                                    <option value="">Select your business type</option>
-                                    <option value="ecommerce">E-commerce</option>
-                                    <option value="saas">SaaS / Tech</option>
-                                    <option value="agency">Agency / Services</option>
-                                    <option value="content">Content Creator</option>
-                                    <option value="consulting">Consulting</option>
-                                    <option value="retail">Retail</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-
-                            <div>
-                                <label for="service" class="block text-sm font-medium text-gray-200 mb-2">Interested In</label>
-                                <select
-                                    id="service"
-                                    name="service"
-                                    class="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-all"
-                                >
-                                    <option value="">Select a service</option>
-                                    <option value="one-time">One-Time Automation</option>
-                                    <option value="subscription">Monthly Subscription</option>
-                                    <option value="not-sure">Not Sure Yet</option>
-                                </select>
-                            </div>
-
-                            <div>
-                                <label for="message" class="block text-sm font-medium text-gray-200 mb-2">Tell us about your workflow *</label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    rows="5"
-                                    required
-                                    class="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-all resize-none"
-                                    placeholder="What tasks are taking up most of your time? What would you like to automate?"
-                                ></textarea>
-                            </div>
-
-                            <button
-                                type="submit"
-                                class="w-full bg-primary-600 text-white px-6 py-4 rounded-lg hover:bg-primary-700 transition-all shadow-md hover:shadow-lg font-medium text-lg"
-                            >
-                                Send Message
-                            </button>
-
-                            <p class="text-sm text-gray-400 text-center">
-                                We'll respond within 24 hours during business days
-                            </p>
-                        </form>
-
-                        <div id="form-success" class="hidden mt-6 p-4 bg-green-900/30 border border-green-700 rounded-lg">
-                            <p class="text-green-200 text-center">✓ Message sent successfully! We'll be in touch soon.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Calendar & Info -->
-                <div class="space-y-8">
-
-                    <!-- Calendar Placeholder -->
-                    <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-lg border border-primary-900/50 p-8">
-                        <h2 class="text-3xl font-bold text-white mb-4">Book a Free Consultation</h2>
-                        <p class="text-gray-300 mb-6">
-                            Schedule a 30-minute call to discuss your automation needs. No commitment required.
-                        </p>
-
-                        <!-- Calendar Integration Placeholder -->
-                        <div class="bg-gray-900 rounded-xl border-2 border-dashed border-primary-700 p-12 text-center">
-                            <svg class="w-16 h-16 text-primary-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                            </svg>
-                            <p class="text-gray-300 font-medium mb-2">Calendar Integration Coming Soon</p>
-                            <p class="text-sm text-gray-400">
-                                In the meantime, use the contact form and we'll schedule a time that works for you.
-                            </p>
-                        </div>
-
-                        <!-- What to Expect -->
-                        <div class="mt-6 space-y-3">
-                            <h3 class="font-semibold text-white">What to expect:</h3>
-                            <ul class="space-y-2 text-gray-300 text-sm">
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span>30-minute video call (Zoom or Google Meet)</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span>Walk through your current workflow</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span>Identify automation opportunities</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span>Receive a custom proposal and timeline</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <svg class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span>No pressure, no obligation to proceed</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Contact Info -->
-                    <div class="bg-gray-900 rounded-2xl shadow-lg border border-gray-700 p-8">
-                        <h3 class="text-2xl font-bold text-white mb-6">Other Ways to Reach Us</h3>
-
-                        <div class="space-y-4">
-                            <div class="flex items-start gap-4">
-                                <div class="w-10 h-10 bg-primary-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <div class="font-medium text-white">Email</div>
-                                    <a href="mailto:hello@integrationpathways.com" class="text-primary-600 hover:text-primary-300">
-                                        hello@integrationpathways.com
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-4">
-                                <div class="w-10 h-10 bg-primary-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <div class="font-medium text-white">Response Time</div>
-                                    <p class="text-gray-300">Within 24 hours on business days</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-4">
-                                <div class="w-10 h-10 bg-primary-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
-                                    </svg>
-                                </div>
-                                <div>
-                                    <div class="font-medium text-white">Time Zone</div>
-                                    <p class="text-gray-300">Available globally, flexible scheduling</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Preview -->
-                    <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700">
-                        <h3 class="text-xl font-bold text-white mb-4">Quick Questions?</h3>
-                        <div class="space-y-4 text-sm">
-                            <div>
-                                <p class="font-medium text-white mb-1">How much does automation cost?</p>
-                                <p class="text-gray-300">It varies by complexity. Most projects range from a few hundred to a few thousand dollars. We'll provide a clear quote after our consultation.</p>
-                            </div>
-                            <div>
-                                <p class="font-medium text-white mb-1">How long does setup take?</p>
-                                <p class="text-gray-300">Simple workflows can be ready in 2-3 days. More complex integrations typically take 1-2 weeks.</p>
-                            </div>
-                            <div>
-                                <p class="font-medium text-white mb-1">Do I need technical knowledge?</p>
-                                <p class="text-gray-300">Not at all! We handle all the technical work and provide simple documentation so you can use your automation with confidence.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-12 px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <h3 class="text-white font-semibold mb-4">Integration <span class="text-primary-400">Pathways</span></h3>
-                    <p class="text-sm text-gray-400">Automate what slows you down.</p>
-                </div>
-                <div>
-                    <h4 class="text-white font-medium mb-4">Pages</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="index.html" class="hover:text-primary-400 transition-colors">Home</a></li>
-                        <li><a href="demo.html" class="hover:text-primary-400 transition-colors">Demo</a></li>
-                        <li><a href="about.html" class="hover:text-primary-400 transition-colors">About</a></li>
-                        <li><a href="contact.html" class="hover:text-primary-400 transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-medium mb-4">Services</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="index.html#products" class="hover:text-primary-400 transition-colors">One-Time Automation</a></li>
-                        <li><a href="index.html#products" class="hover:text-primary-400 transition-colors">Monthly Subscription</a></li>
-                        <li><a href="demo.html" class="hover:text-primary-400 transition-colors">Workflow Examples</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-medium mb-4">Connect</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="contact.html" class="hover:text-primary-400 transition-colors">Book Consultation</a></li>
-                        <li><a href="contact.html" class="hover:text-primary-400 transition-colors">Get in Touch</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 pt-8 text-sm text-gray-400 text-center">
-                <p>&copy; 2026 Integration Pathways. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="assets/js/main.js"></script>
-</body>
-</html>
