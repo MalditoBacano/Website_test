@@ -253,6 +253,29 @@ img[loading="lazy"] {
     }
 }
 
+/* Gradient Glow Effects */
+@keyframes gradientGlow {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.1);
+    }
+}
+
+.gradient-glow {
+    animation: gradientGlow 8s ease-in-out infinite;
+}
+
+/* Enhanced Blur for Modern Browsers */
+@supports (backdrop-filter: blur(100px)) {
+    .gradient-blur {
+        backdrop-filter: blur(100px);
+    }
+}
+
 /* Dark Mode Preparation (for future) */
 @media (prefers-color-scheme: dark) {
     /* Add dark mode styles here when needed */
